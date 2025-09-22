@@ -1,0 +1,113 @@
+:root {
+    --bg-light: #EDEBE6;
+    --bg-secondary: #D6E1C7;
+    --primary-accent: #94C7B6;
+    --text-dark: #403B33;
+    --danger-accent: #D3643B;
+    --text-on-dark-bg: #FFFFFF;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h3.card-title {
+    color: var(--text-dark);
+    font-weight: bold;
+}
+
+hr {
+    border-top: 1px solid var(--bg-secondary);
+}
+
+.table {
+    --bs-table-bg: var(--bg-secondary);
+    --bs-table-color: var(--text-dark);
+    --bs-table-border-color: var(--primary-accent);
+    --bs-table-striped-bg: var(--bg-light);
+    --bs-table-hover-bg: #c9d9b9;
+}
+
+.table-dark {
+    --bs-table-bg: var(--primary-accent);
+    --bs-table-color: var(--text-on-dark-bg);
+    --bs-table-border-color: var(--danger-accent);
+}
+
+.card {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--primary-accent);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-label {
+    color: var(--text-dark);
+}
+
+.form-control, .form-select {
+    background-color: #FFFFFF;
+    color: var(--text-dark);
+    border: 1px solid var(--primary-accent);
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #FFFFFF;
+    color: var(--text-dark);
+    border-color: var(--danger-accent);
+    box-shadow: 0 0 0 0.25rem rgba(211, 100, 59, 0.25);
+}
+
+.btn-primary {
+    background-color: var(--primary-accent);
+    border-color: var(--primary-accent);
+    color: var(--text-on-dark-bg);
+}
+.btn-primary:hover {
+    background-color: #7ab8a5;
+    border-color: #7ab8a5;
+    color: var(--text-on-dark-bg);
+}
+
+.btn-warning {
+    background-color: var(--danger-accent);
+    border-color: var(--danger-accent);
+    color: var(--text-on-dark-bg);
+}
+.btn-warning:hover {
+    background-color: #bb542e;
+    border-color: #bb542e;
+    color: var(--text-on-dark-bg);
+}
+
+.btn-danger {
+    background-color: var(--danger-accent);
+    border-color: var(--danger-accent);
+    color: var(--text-on-dark-bg);
+}
+.btn-danger:hover {
+    background-color: #bb542e;
+    border-color: #bb542e;
+    color: var(--text-on-dark-bg);
+}
+
+.table-responsive-container {
+    overflow-x: auto;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
