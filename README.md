@@ -79,7 +79,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
 ## 🔑 Acesso e Credenciais
 
 * **Acesso à Aplicação:**
-    Após iniciar, a aplicação estará disponível em: `http://localhost:8081`
+    Após iniciar, a aplicação estará disponível em: `http://localhost:8081` ou na porta que preferir.
 
 * **Credenciais de Administrador:**
     * **Usuário:** `admin`
@@ -94,7 +94,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
 
 ## 💻 Como Usar a Aplicação
 
-1.  Após executar o projeto, acesse `http://localhost:8081` no seu navegador.
+1.  Após executar o projeto, acesse `http://localhost:8081` ou 8080, caso a porta esteja ocupada, é necessário alterar para uma vazia no arquivo applications.properties no seu navegador.
 2.  Você será redirecionado para a tela de login. Utilize as credenciais de administrador fornecidas acima.
 3.  Ao logar, você será direcionado ao painel de gerenciamento de produtos.
 4.  No painel, você pode:
