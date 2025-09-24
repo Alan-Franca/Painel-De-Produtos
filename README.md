@@ -79,7 +79,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
 ## 🔑 Acesso e Credenciais
 
 * **Acesso à Aplicação:**
-    Após iniciar, a aplicação estará disponível em: `http://localhost:8081`
+    Após iniciar, a aplicação estará disponível em: `http://localhost:8081` ou na porta que preferir.
 
 * **Credenciais de Administrador:**
     * **Usuário:** `admin`
