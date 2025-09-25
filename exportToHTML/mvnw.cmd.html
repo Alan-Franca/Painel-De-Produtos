@@ -1,0 +1,212 @@
+<html>
+<head>
+<title>mvnw.cmd</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #bcbec4;}
+.s2 { color: #cf8e6d;}
+.s3 { color: #7a7e85;}
+.s4 { color: #6aab73;}
+.s5 { color: #cf8e6d; font-style: italic;}
+.s6 { color: #2aacb8; font-style: italic;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+mvnw.cmd</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;</span><span class="s1"># : batch portion 
+</span><span class="s0">@</span><span class="s2">REM </span><span class="s3">---------------------------------------------------------------------------- 
+</span><span class="s0">@</span><span class="s2">REM </span><span class="s3">Licensed to the Apache Software Foundation (ASF) under one 
+</span><span class="s0">@</span><span class="s2">REM </span><span class="s3">or more contributor license agreements.  See the NOTICE file 
+</span><span class="s0">@</span><span class="s2">REM </span><span class="s3">distributed with this work for additional information 
+</span><span class="s0">@</span><span class="s2">REM </span><span class="s3">regarding copyright ownership.  The ASF licenses this file 
+</span><span class="s0">@</span><span class="s2">REM </span><span class="s3">to you under the Apache License, Version 2.0 (the 
+</span><span class="s0">@</span><span class="s2">REM </span><span class="s3">&quot;License&quot;); you may not use this file except in compliance 
+</span><span class="s0">@</span><span class="s2">REM </span><span class="s3">with the License.  You may obtain a copy of the License at 
+</span><span class="s0">@</span><span class="s2">REM</span>
+<span class="s0">@</span><span class="s2">REM    </span><span class="s3">http://www.apache.org/licenses/LICENSE-2.0 
+</span><span class="s0">@</span><span class="s2">REM</span>
+<span class="s0">@</span><span class="s2">REM </span><span class="s3">Unless required by applicable law or agreed to in writing, 
+</span><span class="s0">@</span><span class="s2">REM </span><span class="s3">software distributed under the License is distributed on an 
+</span><span class="s0">@</span><span class="s2">REM </span><span class="s3">&quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY 
+</span><span class="s0">@</span><span class="s2">REM </span><span class="s3">KIND, either express or implied.  See the License for the 
+</span><span class="s0">@</span><span class="s2">REM </span><span class="s3">specific language governing permissions and limitations 
+</span><span class="s0">@</span><span class="s2">REM </span><span class="s3">under the License. 
+</span><span class="s0">@</span><span class="s2">REM </span><span class="s3">---------------------------------------------------------------------------- 
+</span>
+<span class="s0">@</span><span class="s2">REM </span><span class="s3">---------------------------------------------------------------------------- 
+</span><span class="s0">@</span><span class="s2">REM </span><span class="s3">Apache Maven Wrapper startup batch script, version 3.3.3 
+</span><span class="s0">@</span><span class="s2">REM</span>
+<span class="s0">@</span><span class="s2">REM </span><span class="s3">Optional ENV vars 
+</span><span class="s0">@</span><span class="s2">REM   </span><span class="s3">MVNW_REPOURL - repo url base for downloading maven distribution 
+</span><span class="s0">@</span><span class="s2">REM   </span><span class="s3">MVNW_USERNAME/MVNW_PASSWORD - user and password for downloading maven 
+</span><span class="s0">@</span><span class="s2">REM   </span><span class="s3">MVNW_VERBOSE - true: enable verbose log; others: silence the output 
+</span><span class="s0">@</span><span class="s2">REM </span><span class="s3">---------------------------------------------------------------------------- 
+</span>
+<span class="s0">@</span><span class="s1">IF </span><span class="s0">&quot;%__MVNW_ARG0_NAME__%&quot;==&quot;&quot; (</span><span class="s1">SET __MVNW_ARG0_NAME__=</span><span class="s0">%~nx0)</span>
+<span class="s0">@</span><span class="s2">SET </span><span class="s0">__MVNW_CMD__=</span>
+<span class="s0">@</span><span class="s2">SET </span><span class="s0">__MVNW_ERROR__=</span>
+<span class="s0">@</span><span class="s2">SET </span><span class="s0">__MVNW_PSMODULEP_SAVE=%PSModulePath%</span>
+<span class="s0">@</span><span class="s2">SET </span><span class="s0">PSModulePath=</span>
+<span class="s0">@</span><span class="s1">FOR /F </span><span class="s0">&quot;</span><span class="s4">usebackq tokens=1* delims==</span><span class="s0">&quot; </span><span class="s5">%%</span><span class="s1">A IN </span><span class="s0">(</span><span class="s1">`powershell -noprofile </span><span class="s0">&quot;</span><span class="s4">&amp; {$scriptDir='</span><span class="s0">%~dp0</span><span class="s4">'; $script='</span><span class="s0">%__MVNW_ARG0_NAME__%</span><span class="s4">'; icm -ScriptBlock ([Scriptblock]::Create((Get-Content -Raw '</span><span class="s0">%~f0</span><span class="s4">'))) -NoNewScope}</span><span class="s0">&quot;</span><span class="s1">`</span><span class="s0">) </span><span class="s1">DO </span><span class="s0">@(</span>
+  <span class="s2">IF </span><span class="s0">&quot;</span><span class="s5">%%</span><span class="s4">A</span><span class="s0">&quot;==&quot;</span><span class="s4">MVN_CMD</span><span class="s0">&quot; (</span><span class="s1">set __MVNW_CMD__=</span><span class="s5">%%</span><span class="s1">B</span><span class="s0">) </span><span class="s2">ELSE IF </span><span class="s0">&quot;</span><span class="s5">%%</span><span class="s4">B</span><span class="s0">&quot;==&quot;&quot; (</span><span class="s1">echo </span><span class="s5">%%</span><span class="s1">A</span><span class="s0">) </span><span class="s2">ELSE </span><span class="s0">(</span><span class="s1">echo </span><span class="s5">%%</span><span class="s1">A=</span><span class="s5">%%</span><span class="s1">B</span><span class="s0">)</span>
+<span class="s0">)</span>
+<span class="s0">@</span><span class="s2">SET </span><span class="s0">PSModulePath=%__MVNW_PSMODULEP_SAVE%</span>
+<span class="s0">@</span><span class="s2">SET </span><span class="s0">__MVNW_PSMODULEP_SAVE=</span>
+<span class="s0">@</span><span class="s2">SET </span><span class="s0">__MVNW_ARG0_NAME__=</span>
+<span class="s0">@</span><span class="s2">SET </span><span class="s0">MVNW_USERNAME=</span>
+<span class="s0">@</span><span class="s2">SET </span><span class="s0">MVNW_PASSWORD=</span>
+<span class="s0">@</span><span class="s1">IF </span><span class="s0">NOT &quot;%__MVNW_CMD__%&quot;==&quot;&quot; (&quot;%__MVNW_CMD__%&quot; %*)</span>
+<span class="s0">@</span><span class="s2">echo </span><span class="s1">Cannot start maven from wrapper </span><span class="s0">&gt;&amp;</span><span class="s1">2 </span><span class="s0">&amp;&amp; </span><span class="s2">exit </span><span class="s1">/b </span><span class="s6">1</span>
+<span class="s0">@</span><span class="s1">GOTO </span><span class="s0">:</span><span class="s2">EOF</span>
+<span class="s0">: </span><span class="s3">end batch / begin powershell #&gt;</span>
+
+<span class="s1">$ErrorActionPreference = </span><span class="s0">&quot;</span><span class="s4">Stop</span><span class="s0">&quot;</span>
+<span class="s2">if </span><span class="s0">(</span><span class="s1">$env:MVNW_VERBOSE -eq </span><span class="s0">&quot;</span><span class="s4">true</span><span class="s0">&quot;) </span><span class="s1">{ 
+  $VerbosePreference = </span><span class="s0">&quot;</span><span class="s4">Continue</span><span class="s0">&quot;</span>
+<span class="s1">} 
+</span>
+<span class="s1"># calculate distributionUrl, requires .mvn/wrapper/maven-wrapper.properties 
+$distributionUrl = </span><span class="s0">(</span><span class="s1">Get-Content -Raw </span><span class="s0">&quot;</span><span class="s4">$scriptDir/.mvn/wrapper/maven-wrapper.properties</span><span class="s0">&quot; | </span><span class="s1">ConvertFrom-StringData</span><span class="s0">)</span><span class="s1">.distributionUrl 
+</span><span class="s2">if </span><span class="s0">(</span><span class="s1">!$distributionUrl</span><span class="s0">) </span><span class="s1">{ 
+  Write-Error </span><span class="s0">&quot;</span><span class="s4">cannot read distributionUrl property in $scriptDir/.mvn/wrapper/maven-wrapper.properties</span><span class="s0">&quot;</span>
+<span class="s1">} 
+</span>
+<span class="s1">switch -wildcard -casesensitive </span><span class="s0">( </span><span class="s1">$</span><span class="s0">(</span><span class="s1">$distributionUrl -replace '</span><span class="s5">^</span><span class="s1">.*/'</span><span class="s0">,</span><span class="s1">''</span><span class="s0">) ) </span><span class="s1">{ 
+  </span><span class="s0">&quot;</span><span class="s4">maven-mvnd-*</span><span class="s0">&quot; </span><span class="s1">{ 
+    $USE_MVND = $true 
+    $distributionUrl = $distributionUrl -replace '-bin\.[</span><span class="s5">^</span><span class="s1">.]*$',</span><span class="s0">&quot;</span><span class="s4">-windows-amd64.zip</span><span class="s0">&quot;</span>
+    <span class="s1">$MVN_CMD = </span><span class="s0">&quot;</span><span class="s4">mvnd.cmd</span><span class="s0">&quot;</span>
+    <span class="s1">break 
+  } 
+  default { 
+    $USE_MVND = $false 
+    $MVN_CMD = $script -replace '</span><span class="s5">^</span><span class="s1">mvnw','mvn' 
+    break 
+  } 
+} 
+</span>
+<span class="s1"># apply MVNW_REPOURL and calculate MAVEN_HOME 
+# maven home pattern: ~/.m2/wrapper/dists/{apache-maven-</span><span class="s0">&lt;</span><span class="s1">version</span><span class="s0">&gt;</span><span class="s1">,maven-mvnd-</span><span class="s0">&lt;</span><span class="s1">version</span><span class="s0">&gt;</span><span class="s1">-</span><span class="s0">&lt;</span><span class="s1">platform</span><span class="s0">&gt;</span><span class="s1">}/</span><span class="s0">&lt;</span><span class="s1">hash</span><span class="s0">&gt;</span>
+<span class="s2">if </span><span class="s0">(</span><span class="s1">$env:MVNW_REPOURL</span><span class="s0">) </span><span class="s1">{ 
+  $MVNW_REPO_PATTERN = </span><span class="s2">if </span><span class="s0">(</span><span class="s1">$USE_MVND -eq $False</span><span class="s0">) </span><span class="s1">{ </span><span class="s0">&quot;</span><span class="s4">/org/apache/maven/</span><span class="s0">&quot; </span><span class="s1">} </span><span class="s2">else </span><span class="s1">{ </span><span class="s0">&quot;</span><span class="s4">/maven/mvnd/</span><span class="s0">&quot; </span><span class="s1">} 
+  $distributionUrl = </span><span class="s0">&quot;</span><span class="s4">$env:MVNW_REPOURL$MVNW_REPO_PATTERN$($distributionUrl -replace </span><span class="s0">&quot;</span><span class="s5">^</span><span class="s1">.*$MVNW_REPO_PATTERN</span><span class="s0">&quot;</span><span class="s4">,'')</span><span class="s0">&quot;</span>
+<span class="s1">} 
+$distributionUrlName = $distributionUrl -replace '</span><span class="s5">^</span><span class="s1">.*/','' 
+$distributionUrlNameMain = $distributionUrlName -replace '\.[</span><span class="s5">^</span><span class="s1">.]*$','' -replace '-bin$','' 
+</span>
+<span class="s1">$MAVEN_M2_PATH = </span><span class="s0">&quot;</span><span class="s4">$HOME/.m2</span><span class="s0">&quot;</span>
+<span class="s2">if </span><span class="s0">(</span><span class="s1">$env:MAVEN_USER_HOME</span><span class="s0">) </span><span class="s1">{ 
+  $MAVEN_M2_PATH = </span><span class="s0">&quot;</span><span class="s4">$env:MAVEN_USER_HOME</span><span class="s0">&quot;</span>
+<span class="s1">} 
+</span>
+<span class="s2">if </span><span class="s0">(</span><span class="s1">-not </span><span class="s0">(</span><span class="s1">Test-Path -Path $MAVEN_M2_PATH</span><span class="s0">)) </span><span class="s1">{ 
+    New-Item -Path $MAVEN_M2_PATH -ItemType Directory </span><span class="s0">| </span><span class="s1">Out-Null 
+} 
+</span>
+<span class="s1">$MAVEN_WRAPPER_DISTS = $null 
+</span><span class="s2">if </span><span class="s0">((</span><span class="s1">Get-Item $MAVEN_M2_PATH</span><span class="s0">)</span><span class="s1">.Target[0] -eq $null</span><span class="s0">) </span><span class="s1">{ 
+  $MAVEN_WRAPPER_DISTS = </span><span class="s0">&quot;</span><span class="s4">$MAVEN_M2_PATH/wrapper/dists</span><span class="s0">&quot;</span>
+<span class="s1">} </span><span class="s2">else </span><span class="s1">{ 
+  $MAVEN_WRAPPER_DISTS = </span><span class="s0">(</span><span class="s1">Get-Item $MAVEN_M2_PATH</span><span class="s0">)</span><span class="s1">.Target[0] + </span><span class="s0">&quot;</span><span class="s4">/wrapper/dists</span><span class="s0">&quot;</span>
+<span class="s1">} 
+</span>
+<span class="s1">$MAVEN_HOME_PARENT = </span><span class="s0">&quot;</span><span class="s4">$MAVEN_WRAPPER_DISTS/$distributionUrlNameMain</span><span class="s0">&quot;</span>
+<span class="s1">$MAVEN_HOME_NAME = </span><span class="s0">(</span><span class="s1">[System.Security.Cryptography.SHA256]::Create</span><span class="s0">()</span><span class="s1">.ComputeHash</span><span class="s0">(</span><span class="s1">[byte[]][char[]]$distributionUrl</span><span class="s0">) | </span><span class="s1">ForEach-Object {$_.ToString</span><span class="s0">(&quot;</span><span class="s4">x2</span><span class="s0">&quot;)</span><span class="s1">}</span><span class="s0">) </span><span class="s1">-join '' 
+$MAVEN_HOME = </span><span class="s0">&quot;</span><span class="s4">$MAVEN_HOME_PARENT/$MAVEN_HOME_NAME</span><span class="s0">&quot;</span>
+
+<span class="s2">if </span><span class="s0">(</span><span class="s1">Test-Path -Path </span><span class="s0">&quot;</span><span class="s4">$MAVEN_HOME</span><span class="s0">&quot; </span><span class="s1">-PathType Container</span><span class="s0">) </span><span class="s1">{ 
+  Write-Verbose </span><span class="s0">&quot;</span><span class="s4">found existing MAVEN_HOME at $MAVEN_HOME</span><span class="s0">&quot;</span>
+  <span class="s1">Write-Output </span><span class="s0">&quot;</span><span class="s4">MVN_CMD=$MAVEN_HOME/bin/$MVN_CMD</span><span class="s0">&quot;</span>
+  <span class="s2">exit </span><span class="s1">$? 
+} 
+</span>
+<span class="s2">if </span><span class="s0">(</span><span class="s1">! $distributionUrlNameMain -or </span><span class="s0">(</span><span class="s1">$distributionUrlName -eq $distributionUrlNameMain</span><span class="s0">)) </span><span class="s1">{ 
+  Write-Error </span><span class="s0">&quot;</span><span class="s4">distributionUrl is not valid, must end with *-bin.zip, but found $distributionUrl</span><span class="s0">&quot;</span>
+<span class="s1">} 
+</span>
+<span class="s1"># prepare tmp </span><span class="s2">dir</span>
+<span class="s1">$TMP_DOWNLOAD_DIR_HOLDER = New-TemporaryFile 
+$TMP_DOWNLOAD_DIR = New-Item -Itemtype Directory -Path </span><span class="s0">&quot;</span><span class="s4">$TMP_DOWNLOAD_DIR_HOLDER.dir</span><span class="s0">&quot;</span>
+<span class="s1">$TMP_DOWNLOAD_DIR_HOLDER.Delete</span><span class="s0">() | </span><span class="s1">Out-Null 
+trap { 
+  </span><span class="s2">if </span><span class="s0">(</span><span class="s1">$TMP_DOWNLOAD_DIR.Exists</span><span class="s0">) </span><span class="s1">{ 
+    try { Remove-Item $TMP_DOWNLOAD_DIR -Recurse -Force </span><span class="s0">| </span><span class="s1">Out-Null } 
+    catch { Write-Warning </span><span class="s0">&quot;</span><span class="s4">Cannot remove $TMP_DOWNLOAD_DIR</span><span class="s0">&quot; </span><span class="s1">} 
+  } 
+} 
+</span>
+<span class="s1">New-Item -Itemtype Directory -Path </span><span class="s0">&quot;</span><span class="s4">$MAVEN_HOME_PARENT</span><span class="s0">&quot; </span><span class="s1">-Force </span><span class="s0">| </span><span class="s1">Out-Null 
+</span>
+<span class="s1"># Download and Install Apache Maven 
+Write-Verbose </span><span class="s0">&quot;</span><span class="s4">Couldn't find MAVEN_HOME, downloading and installing it ...</span><span class="s0">&quot;</span>
+<span class="s1">Write-Verbose </span><span class="s0">&quot;</span><span class="s4">Downloading from: $distributionUrl</span><span class="s0">&quot;</span>
+<span class="s1">Write-Verbose </span><span class="s0">&quot;</span><span class="s4">Downloading to: $TMP_DOWNLOAD_DIR/$distributionUrlName</span><span class="s0">&quot;</span>
+
+<span class="s1">$webclient = New-Object System.Net.WebClient 
+</span><span class="s2">if </span><span class="s0">(</span><span class="s1">$env:MVNW_USERNAME -and $env:MVNW_PASSWORD</span><span class="s0">) </span><span class="s1">{ 
+  $webclient.Credentials = New-Object System.Net.NetworkCredential</span><span class="s0">(</span><span class="s1">$env:MVNW_USERNAME</span><span class="s0">, </span><span class="s1">$env:MVNW_PASSWORD</span><span class="s0">)</span>
+<span class="s1">} 
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 
+$webclient.DownloadFile</span><span class="s0">(</span><span class="s1">$distributionUrl</span><span class="s0">, &quot;</span><span class="s4">$TMP_DOWNLOAD_DIR/$distributionUrlName</span><span class="s0">&quot;) | </span><span class="s1">Out-Null 
+</span>
+<span class="s1"># </span><span class="s2">If </span><span class="s1">specified, validate the SHA-256 sum of the Maven distribution zip file 
+$distributionSha256Sum = </span><span class="s0">(</span><span class="s1">Get-Content -Raw </span><span class="s0">&quot;</span><span class="s4">$scriptDir/.mvn/wrapper/maven-wrapper.properties</span><span class="s0">&quot; | </span><span class="s1">ConvertFrom-StringData</span><span class="s0">)</span><span class="s1">.distributionSha256Sum 
+</span><span class="s2">if </span><span class="s0">(</span><span class="s1">$distributionSha256Sum</span><span class="s0">) </span><span class="s1">{ 
+  </span><span class="s2">if </span><span class="s0">(</span><span class="s1">$USE_MVND</span><span class="s0">) </span><span class="s1">{ 
+    Write-Error </span><span class="s0">&quot;</span><span class="s4">Checksum validation is not supported for maven-mvnd. `nPlease disable validation by removing 'distributionSha256Sum' from your maven-wrapper.properties.</span><span class="s0">&quot;</span>
+  <span class="s1">} 
+  Import-Module $PSHOME\Modules\Microsoft.PowerShell.Utility -Function Get-FileHash 
+  </span><span class="s2">if </span><span class="s0">((</span><span class="s1">Get-FileHash </span><span class="s0">&quot;</span><span class="s4">$TMP_DOWNLOAD_DIR/$distributionUrlName</span><span class="s0">&quot; </span><span class="s1">-Algorithm SHA256</span><span class="s0">)</span><span class="s1">.Hash.ToLower</span><span class="s0">() </span><span class="s1">-ne $distributionSha256Sum</span><span class="s0">) </span><span class="s1">{ 
+    Write-Error </span><span class="s0">&quot;</span><span class="s4">Error: Failed to validate Maven distribution SHA-256, your Maven distribution might be compromised. If you updated your Maven version, you need to update the specified distributionSha256Sum property.</span><span class="s0">&quot;</span>
+  <span class="s1">} 
+} 
+</span>
+<span class="s1"># unzip and </span><span class="s2">move</span>
+<span class="s1">Expand-Archive </span><span class="s0">&quot;</span><span class="s4">$TMP_DOWNLOAD_DIR/$distributionUrlName</span><span class="s0">&quot; </span><span class="s1">-DestinationPath </span><span class="s0">&quot;</span><span class="s4">$TMP_DOWNLOAD_DIR</span><span class="s0">&quot; | </span><span class="s1">Out-Null 
+</span>
+<span class="s1"># </span><span class="s2">Find </span><span class="s1">the actual extracted directory name </span><span class="s0">(</span><span class="s1">handles snapshots </span><span class="s2">where </span><span class="s1">filename != directory name</span><span class="s0">)</span>
+<span class="s1">$actualDistributionDir = </span><span class="s0">&quot;&quot;</span>
+
+<span class="s1"># First try the expected directory name </span><span class="s0">(</span><span class="s2">for </span><span class="s1">regular distributions) 
+$expectedPath = Join-Path </span><span class="s0">&quot;</span><span class="s4">$TMP_DOWNLOAD_DIR</span><span class="s0">&quot; &quot;</span><span class="s4">$distributionUrlNameMain</span><span class="s0">&quot;</span>
+<span class="s1">$expectedMvnPath = Join-Path </span><span class="s0">&quot;</span><span class="s4">$expectedPath</span><span class="s0">&quot; &quot;</span><span class="s4">bin/$MVN_CMD</span><span class="s0">&quot;</span>
+<span class="s2">if </span><span class="s0">((</span><span class="s1">Test-Path -Path $expectedPath -PathType Container</span><span class="s0">) </span><span class="s1">-and </span><span class="s0">(</span><span class="s1">Test-Path -Path $expectedMvnPath -PathType Leaf</span><span class="s0">)) </span><span class="s1">{ 
+  $actualDistributionDir = $distributionUrlNameMain 
+} 
+</span>
+<span class="s1"># </span><span class="s2">If </span><span class="s0">not </span><span class="s1">found</span><span class="s0">, </span><span class="s1">search </span><span class="s2">for </span><span class="s1">any directory with the Maven executable </span><span class="s0">(</span><span class="s2">for </span><span class="s1">snapshots) 
+</span><span class="s2">if </span><span class="s0">(</span><span class="s1">!$actualDistributionDir</span><span class="s0">) </span><span class="s1">{ 
+  Get-ChildItem -Path </span><span class="s0">&quot;</span><span class="s4">$TMP_DOWNLOAD_DIR</span><span class="s0">&quot; </span><span class="s1">-Directory </span><span class="s0">| </span><span class="s1">ForEach-Object { 
+    $testPath = Join-Path $_.FullName </span><span class="s0">&quot;</span><span class="s4">bin/$MVN_CMD</span><span class="s0">&quot;</span>
+    <span class="s2">if </span><span class="s0">(</span><span class="s1">Test-Path -Path $testPath -PathType Leaf</span><span class="s0">) </span><span class="s1">{ 
+      $actualDistributionDir = $_.Name 
+    } 
+  } 
+} 
+</span>
+<span class="s2">if </span><span class="s0">(</span><span class="s1">!$actualDistributionDir</span><span class="s0">) </span><span class="s1">{ 
+  Write-Error </span><span class="s0">&quot;</span><span class="s4">Could not find Maven distribution directory in extracted archive</span><span class="s0">&quot;</span>
+<span class="s1">} 
+</span>
+<span class="s1">Write-Verbose </span><span class="s0">&quot;</span><span class="s4">Found extracted Maven distribution directory: $actualDistributionDir</span><span class="s0">&quot;</span>
+<span class="s1">Rename-Item -Path </span><span class="s0">&quot;</span><span class="s4">$TMP_DOWNLOAD_DIR/$actualDistributionDir</span><span class="s0">&quot; </span><span class="s1">-NewName $MAVEN_HOME_NAME </span><span class="s0">| </span><span class="s1">Out-Null 
+try { 
+  Move-Item -Path </span><span class="s0">&quot;</span><span class="s4">$TMP_DOWNLOAD_DIR/$MAVEN_HOME_NAME</span><span class="s0">&quot; </span><span class="s1">-Destination $MAVEN_HOME_PARENT </span><span class="s0">| </span><span class="s1">Out-Null 
+} catch { 
+  </span><span class="s2">if </span><span class="s0">(</span><span class="s1">! </span><span class="s0">(</span><span class="s1">Test-Path -Path </span><span class="s0">&quot;</span><span class="s4">$MAVEN_HOME</span><span class="s0">&quot; </span><span class="s1">-PathType Container</span><span class="s0">)) </span><span class="s1">{ 
+    Write-Error </span><span class="s0">&quot;</span><span class="s4">fail to move MAVEN_HOME</span><span class="s0">&quot;</span>
+  <span class="s1">} 
+} finally { 
+  try { Remove-Item $TMP_DOWNLOAD_DIR -Recurse -Force </span><span class="s0">| </span><span class="s1">Out-Null } 
+  catch { Write-Warning </span><span class="s0">&quot;</span><span class="s4">Cannot remove $TMP_DOWNLOAD_DIR</span><span class="s0">&quot; </span><span class="s1">} 
+} 
+</span>
+<span class="s1">Write-Output </span><span class="s0">&quot;</span><span class="s4">MVN_CMD=$MAVEN_HOME/bin/$MVN_CMD</span><span class="s0">&quot;</span>
+</pre>
+</body>
+</html>

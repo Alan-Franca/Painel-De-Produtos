@@ -14,7 +14,7 @@ public class PainelProdutosApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PainelProdutosApplication.class, args);
 	}
-
+    @SuppressWarnings("unused")
     @Bean
     CommandLineRunner initDatabase(CategoriaRepository categoriaRepository) {
         return args -> {

@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #56a8f5;}
+.s4 { color: #c77dbb; font-style: italic;}
+.s5 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+README.md</font>
+</center></td></tr></table>
+<pre><span class="s0"># </span><span class="s2">Painel de Gerenciamento de Produtos</span>
+
+<span class="s1">![</span><span class="s2">Java</span><span class="s1">](</span><span class="s3">https://img.shields.io/badge/Java-17-blue</span><span class="s1">)</span>
+<span class="s1">![</span><span class="s2">Spring Boot</span><span class="s1">](</span><span class="s3">https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen</span><span class="s1">)</span>
+<span class="s1">![</span><span class="s2">Maven</span><span class="s1">](</span><span class="s3">https://img.shields.io/badge/Maven-4.0.0-red</span><span class="s1">)</span>
+<span class="s1">![</span><span class="s2">License</span><span class="s1">](</span><span class="s3">https://img.shields.io/badge/License-MIT-yellow.svg</span><span class="s1">)</span>
+
+<span class="s0">## </span><span class="s2">📝 Descrição</span>
+
+<span class="s2">Este projeto é uma aplicação web desenvolvida como um painel administrativo para gerenciamento de produtos em um inventário de loja. O objetivo principal foi aplicar e demonstrar conhecimentos práticos no ecossistema Spring, construindo uma aplicação funcional, segura e com uma interface amigável.</span>
+
+<span class="s2">Um usuário administrador pode se autenticar para acessar um painel onde é possível realizar operações de CRUD </span><span class="s1">(</span><span class="s2">Criar, Ler, Atualizar e Excluir</span><span class="s1">) </span><span class="s2">para os produtos da loja.</span>
+
+<span class="s0">## </span><span class="s2">✨ Funcionalidades</span>
+
+<span class="s0">* </span><span class="s1">**</span><span class="s2">Autenticação e Autorização</span><span class="s1">:** </span><span class="s2">Acesso ao painel protegido por login e senha utilizando Spring Security.</span>
+<span class="s0">* </span><span class="s1">**</span><span class="s2">Gerenciamento de Produtos </span><span class="s1">(</span><span class="s2">CRUD</span><span class="s1">):**</span>
+    <span class="s0">* </span><span class="s2">Cadastro de novos produtos com nome, marca, preço base e categoria.</span>
+    <span class="s0">* </span><span class="s2">Listagem completa de todos os produtos em uma tabela responsiva.</span>
+    <span class="s0">* </span><span class="s2">Edição das informações de produtos existentes.</span>
+    <span class="s0">* </span><span class="s2">Exclusão de produtos.</span>
+<span class="s0">* </span><span class="s1">**</span><span class="s2">Categorização</span><span class="s1">:** </span><span class="s2">Cada produto pertence a uma categoria pré-definida </span><span class="s1">(</span><span class="s2">ex</span><span class="s1">: </span><span class="s2">Eletrônicos, Hardware, etc.</span><span class="s1">)</span><span class="s2">.</span>
+<span class="s0">* </span><span class="s1">**</span><span class="s2">Lógica de Negócio</span><span class="s1">:** </span><span class="s2">Cálculo automático do preço de venda com base no preço base e em uma taxa de imposto padrão.</span>
+<span class="s0">* </span><span class="s1">**</span><span class="s2">Interface Responsiva</span><span class="s1">:** </span><span class="s2">O layout se adapta a diferentes tamanhos de tela, de desktops a dispositivos móveis.</span>
+
+<span class="s0">## </span><span class="s2">🛠️ Tecnologias Utilizadas</span>
+
+<span class="s0">* </span><span class="s1">**</span><span class="s2">Backend</span><span class="s1">:**</span>
+    <span class="s0">* </span><span class="s1">[</span><span class="s2">Java 17</span><span class="s1">](</span><span class="s3">https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html</span><span class="s1">)</span>
+    <span class="s0">* </span><span class="s1">[</span><span class="s2">Spring Boot</span><span class="s1">](</span><span class="s3">https://spring.io/projects/spring-boot</span><span class="s1">)</span>
+    <span class="s0">* </span><span class="s1">[</span><span class="s2">Spring MVC</span><span class="s1">](</span><span class="s3">https://docs.spring.io/spring-framework/reference/web/webmvc.html</span><span class="s1">)</span>
+    <span class="s0">* </span><span class="s1">[</span><span class="s2">Spring Data JPA</span><span class="s1">](</span><span class="s3">https://spring.io/projects/spring-data-jpa</span><span class="s1">)</span>
+    <span class="s0">* </span><span class="s1">[</span><span class="s2">Spring Security</span><span class="s1">](</span><span class="s3">https://spring.io/projects/spring-security</span><span class="s1">)</span>
+<span class="s0">* </span><span class="s1">**</span><span class="s2">Frontend</span><span class="s1">:**</span>
+    <span class="s0">* </span><span class="s1">[</span><span class="s2">Thymeleaf</span><span class="s1">](</span><span class="s3">https://www.thymeleaf.org/</span><span class="s1">) (</span><span class="s2">Template Engine</span><span class="s1">)</span>
+    <span class="s0">* </span><span class="s2">HTML5 / CSS3</span>
+    <span class="s0">* </span><span class="s1">[</span><span class="s2">Bootstrap 5</span><span class="s1">](</span><span class="s3">https://getbootstrap.com/</span><span class="s1">) (</span><span class="s2">para agilizar a estilização e responsividade</span><span class="s1">)</span>
+<span class="s0">* </span><span class="s1">**</span><span class="s2">Banco de Dados</span><span class="s1">:**</span>
+    <span class="s0">* </span><span class="s1">[</span><span class="s2">H2 Database</span><span class="s1">](</span><span class="s3">https://www.h2database.com/html/main.html</span><span class="s1">) (</span><span class="s2">em memória, para fins de desenvolvimento</span><span class="s1">)</span>
+<span class="s0">* </span><span class="s1">**</span><span class="s2">Build e Dependências</span><span class="s1">:**</span>
+    <span class="s0">* </span><span class="s1">[</span><span class="s2">Apache Maven</span><span class="s1">](</span><span class="s3">https://maven.apache.org/</span><span class="s1">)</span>
+
+<span class="s0">## </span><span class="s2">🚀 Como Executar o Projeto</span>
+
+<span class="s2">Siga os passos abaixo para executar o projeto em sua máquina local.</span>
+
+<span class="s0">### </span><span class="s2">Pré-requisitos</span>
+
+<span class="s2">Antes de começar, você vai precisar ter instalado em sua máquina</span><span class="s1">:</span>
+<span class="s0">* </span><span class="s1">[</span><span class="s2">JDK 17</span><span class="s1">](</span><span class="s3">https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html</span><span class="s1">) </span><span class="s2">ou superior</span>
+<span class="s0">* </span><span class="s1">[</span><span class="s2">Apache Maven</span><span class="s1">](</span><span class="s3">https://maven.apache.org/download.cgi</span><span class="s1">)</span>
+<span class="s0">* </span><span class="s1">[</span><span class="s2">Git</span><span class="s1">](</span><span class="s3">https://git-scm.com/downloads</span><span class="s1">)</span>
+
+<span class="s0">### </span><span class="s2">Passos para Execução</span>
+
+<span class="s0">1.  </span><span class="s1">**</span><span class="s2">Clone o repositório</span><span class="s1">:**</span>
+    <span class="s0">```</span><span class="s4">bash</span>
+    <span class="s5">git clone [https://github.com/Alan-Franca/Painel-De-Produtos.git](https://github.com/Alan-Franca/Painel-De-Produtos.git)</span>
+    <span class="s0">```</span>
+
+<span class="s0">2.  </span><span class="s1">**</span><span class="s2">Navegue até a pasta do projeto</span><span class="s1">:**</span>
+    <span class="s0">```</span><span class="s4">bash</span>
+    <span class="s5">cd seu-repositorio</span>
+    <span class="s0">```</span>
+
+<span class="s0">3.  </span><span class="s1">**</span><span class="s2">Compile e instale as dependências com o Maven</span><span class="s1">:**</span>
+    <span class="s1">*</span><span class="s2">Este comando irá baixar todas as bibliotecas necessárias e compilar o código.</span><span class="s1">*</span>
+    <span class="s0">```</span><span class="s4">bash</span>
+    <span class="s5">mvn clean install</span>
+    <span class="s0">```</span>
+
+<span class="s0">4.  </span><span class="s1">**</span><span class="s2">Execute a aplicação</span><span class="s1">:**</span>
+    <span class="s0">```</span><span class="s4">bash</span>
+    <span class="s5">mvn spring-boot:run</span>
+    <span class="s0">```</span>
+
+<span class="s0">5.  </span><span class="s1">**</span><span class="s2">Alternativamente</span><span class="s1">**</span><span class="s2">, você pode importar o projeto em sua IDE preferida </span><span class="s1">(</span><span class="s2">como IntelliJ IDEA ou Eclipse</span><span class="s1">) </span><span class="s2">e executar a classe principal `PainelProdutosApplication.java`.</span>
+
+<span class="s0">## </span><span class="s2">🔑 Acesso e Credenciais</span>
+
+<span class="s0">* </span><span class="s1">**</span><span class="s2">Acesso à Aplicação</span><span class="s1">:**</span>
+    <span class="s2">Após iniciar, a aplicação estará disponível em</span><span class="s1">: </span><span class="s2">`</span><span class="s3">http://localhost:8081</span><span class="s2">` ou na porta que preferir.</span>
+
+<span class="s0">* </span><span class="s1">**</span><span class="s2">Credenciais de Administrador</span><span class="s1">:**</span>
+    <span class="s0">* </span><span class="s1">**</span><span class="s2">Usuário</span><span class="s1">:** </span><span class="s2">`admin`</span>
+    <span class="s0">* </span><span class="s1">**</span><span class="s2">Senha</span><span class="s1">:** </span><span class="s2">`admin123`</span>
+
+<span class="s0">* </span><span class="s1">**</span><span class="s2">Acesso ao Banco de Dados H2</span><span class="s1">:**</span>
+    <span class="s1">*</span><span class="s2">Para visualizar o banco de dados em memória durante a execução.</span><span class="s1">*</span>
+    <span class="s0">* </span><span class="s1">**</span><span class="s2">URL</span><span class="s1">:** </span><span class="s2">`</span><span class="s3">http://localhost:8081/h2-console</span><span class="s2">`</span>
+    <span class="s0">* </span><span class="s1">**</span><span class="s2">JDBC URL</span><span class="s1">:** </span><span class="s2">`jdbc</span><span class="s1">:</span><span class="s2">h2</span><span class="s1">:</span><span class="s2">mem</span><span class="s1">:</span><span class="s2">produtodb`</span>
+    <span class="s0">* </span><span class="s1">**</span><span class="s2">User Name</span><span class="s1">:** </span><span class="s2">`sa`</span>
+    <span class="s0">* </span><span class="s1">**</span><span class="s2">Password</span><span class="s1">:** (</span><span class="s2">deixe em branco</span><span class="s1">)</span>
+
+<span class="s0">## </span><span class="s2">💻 Como Usar a Aplicação</span>
+
+<span class="s0">1.  </span><span class="s2">Após executar o projeto, acesse `</span><span class="s3">http://localhost:8081</span><span class="s2">` ou 8080, caso a porta esteja ocupada, é necessário alterar para uma vazia no arquivo applications.properties no seu navegador.</span>
+<span class="s0">2.  </span><span class="s2">Você será redirecionado para a tela de login. Utilize as credenciais de administrador fornecidas acima.</span>
+<span class="s0">3.  </span><span class="s2">Ao logar, você será direcionado ao painel de gerenciamento de produtos.</span>
+<span class="s0">4.  </span><span class="s2">No painel, você pode</span><span class="s1">:</span>
+    <span class="s0">* </span><span class="s2">Clicar em </span><span class="s1">**&quot;</span><span class="s2">Cadastrar Novo Produto</span><span class="s1">&quot;** </span><span class="s2">para abrir o formulário de criação.</span>
+    <span class="s0">* </span><span class="s2">Clicar em </span><span class="s1">**&quot;</span><span class="s2">Editar</span><span class="s1">&quot;** </span><span class="s2">em um produto existente para modificar suas informações.</span>
+    <span class="s0">* </span><span class="s2">Clicar em </span><span class="s1">**&quot;</span><span class="s2">Excluir</span><span class="s1">&quot;** </span><span class="s2">para remover um produto do inventário.</span>
+
+<span class="s0">## </span><span class="s2">🔮 Próximos Passos </span><span class="s1">(</span><span class="s2">Melhorias Futuras</span><span class="s1">)</span>
+
+<span class="s0">* </span><span class="s1">[ ] </span><span class="s2">Migrar do banco de dados H2 para um banco persistente </span><span class="s1">(</span><span class="s2">PostgreSQL ou MySQL</span><span class="s1">)</span><span class="s2">.</span>
+<span class="s0">* </span><span class="s1">[ ] </span><span class="s2">Implementar uma camada de testes </span><span class="s1">(</span><span class="s2">unitários e de integração</span><span class="s1">)</span><span class="s2">.</span>
+<span class="s0">* </span><span class="s1">[ ] </span><span class="s2">Adicionar validações mais robustas nos campos do formulário </span><span class="s1">(</span><span class="s2">Bean Validation</span><span class="s1">)</span><span class="s2">.</span>
+<span class="s0">* </span><span class="s1">[ ] </span><span class="s2">Criar uma API RESTful para o backend e desacoplar o frontend.</span>
+<span class="s0">* </span><span class="s1">[ ] </span><span class="s2">Containerizar a aplicação com Docker.</span>
+<span class="s0">* </span><span class="s1">[ ] </span><span class="s2">Implementar um sistema de gerenciamento de usuários com diferentes papéis </span><span class="s1">(</span><span class="s2">roles</span><span class="s1">)</span><span class="s2">.</span>
+
+<span class="s0">---</span>
+<span class="s2">Feito com ❤️ por </span><span class="s1">[</span><span class="s2">Alan França</span><span class="s1">](</span><span class="s3">https://github.com/Alan-Franca</span><span class="s1">)</span>
+</pre>
+</body>
+</html>
